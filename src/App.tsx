@@ -6,6 +6,9 @@ import SprintChat from './components/SprintChat';
 
 function App() {
   const [user, loading] = useAuthState(auth);
+  useEffect(() => {
+    requestPermission();
+  }, []);
 
   if (loading) {
     return (
