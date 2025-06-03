@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Chat from './components/Chat';
-import { messaging } from './firebase';
+import { messaging } from './lib/firebase';
 import { getToken, onMessage } from 'firebase/messaging';
 
 function App() {
